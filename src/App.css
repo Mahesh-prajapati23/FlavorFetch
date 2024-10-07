@@ -1,0 +1,21 @@
+nav{
+    position: relative;
+}
+nav::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    height: 4px;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    animation: move 1s linear infinite alternate;    
+}
+
+@keyframes move{
+    0%{
+        left: 30%;
+    }
+    100%{
+        left: 60%;
+    }
+}
